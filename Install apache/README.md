@@ -65,6 +65,7 @@ $RM -f "$cfgfile"
 ./configure --prefix=/home/username/opt/apr
 make
 make install
+cd ..
 ```
 
 ### Expat library
@@ -76,6 +77,7 @@ cd expat-2.4.8
 ./configure --prefix=/home/username/opt/expat
 make
 make install
+cd ..
 ```
 
 ### APR-UTIL
@@ -87,6 +89,7 @@ cd apr-util-1.6.1
 ./configure --prefix=/home/username/opt/apr-util --with-expat=/home/username/opt/expat --with-apr=/home/username/opt/apr
 make
 make install
+cd ..
 ```
 
 ### PCRE
@@ -95,9 +98,11 @@ http://www.pcre.org/
 wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.40/pcre2-10.40.tar.gz
 gzip -d pcre2-10.40.tar.gz
 tar xvf pcre2-10.40.tar
+cd pcre2-10.40
 ./configure --prefix=/home/username/opt/pcre
 make
 make install
+cd ..
 ```
 
 ### Installing httpd
@@ -106,6 +111,7 @@ cd httpd-2.4.53
 ./configure --prefix=/home/username/pkg/apache --with-apr=/home/ubuntu/opt/apr --with-pcre=/home/ubuntu/opt/pcre/bin/pcre2-config --with-apr-util=/home/ubuntu/opt/apr-util
 make
 make install
+cd ..
 ```
 
 ### Starting apache webserver
