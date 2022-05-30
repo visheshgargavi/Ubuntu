@@ -108,7 +108,7 @@ cd ..
 ### Installing httpd
 ```hcl
 cd httpd-2.4.53
-./configure --prefix=/home/username/pkg/apache --with-apr=/home/ubuntu/opt/apr --with-pcre=/home/ubuntu/opt/pcre/bin/pcre2-config --with-apr-util=/home/ubuntu/opt/apr-util
+./configure --prefix=/home/username/pkg/apache --with-apr=/home/username/opt/apr --with-pcre=/home/username/opt/pcre/bin/pcre2-config --with-apr-util=/home/username/opt/apr-util
 make
 make install
 cd ..
